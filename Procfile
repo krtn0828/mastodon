@@ -1,4 +1,4 @@
-web: bin/heroku-web
+web: /app/bin/start_with_oauth2_proxy.sh bin/heroku-web
 worker: bundle exec sidekiq
 
 # For the streaming API, you need a separate app that shares Postgres and Redis:
